@@ -17,12 +17,12 @@
   <!-- Beginning header -->
   <header>
     <!-- Beginning nav -->
-    <nav>
+    <nav role="navigation" aria-label="breadcrumb">
       <h1 aria-label="Home" tabindex="0"><a href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
     <ul id="breadcrumb" >
-      <li aria-label="Home" tabindex="1"><a href="/">Home</a></li>
+      <li aria-label="Home" tabindex="1"><a href="/" aria-label="Home">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
     <!-- End nav -->
@@ -33,7 +33,7 @@
   <main id="maincontent">
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map">
+      <div id="map" aria-label="Map of Restaurants" role="application">
         
       </div>
     </section>
@@ -68,7 +68,9 @@
   <script type="text/javascript" src="js/dbhelper.js"></script>
   <!-- Main javascript file -->
   <script type="text/javascript" src="js/restaurant_info.js"></script>
-  <script type="application/javascript" charset="utf-8" src="js/sw.js"></script>
+  <script type="application/javascript" charset="utf-8" src="js/registerserviceworker.js"></script>
+
+  <script type="application/javascript" charset="utf-8" src="sw.js"></script>
 
   <!-- Google Maps -->
  <!--  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_tKbW6A5pQ-eupxI56myUnHLqYCzOjKo&libraries=places&callback=initMap"></script> -->
